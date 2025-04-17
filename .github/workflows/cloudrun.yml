@@ -13,6 +13,7 @@ jobs:
       SERVICE: ${{ secrets.CLOUD_RUN_SERVICE }}
       REGION: ${{ secrets.GCP_REGION }}
       IMAGE: northamerica-northeast2-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/portfolio-website/portfolio:${{ github.sha }}
+      SERVICE_ACCOUNT_EMAIL: ${{ secrets.GCP_SA_KEY.client_email }}
 
     steps:
     - name: Checkout code
@@ -41,4 +42,4 @@ jobs:
         service: ${{ secrets.CLOUD_RUN_SERVICE }}
         image: $IMAGE
         region: ${{ secrets.GCP_REGION }}
-        flags: --allow-unauthenticated
+        flags: --allow-unauthenticated --service-account=${{ env.SERVICE_ACCOUNT_EMAIL }}

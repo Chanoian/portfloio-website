@@ -12,8 +12,7 @@ jobs:
       PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
       SERVICE: ${{ secrets.CLOUD_RUN_SERVICE }}
       REGION: ${{ secrets.GCP_REGION }}
-      REPOSITORY: "portfolio-website"
-      IMAGE: northamerica-northeast2-docker.pkg.dev/${{secrets.GCP_PROJECT_ID}}/${{REPOSITORY}}/portfolio:${{ github.sha }}
+      IMAGE: northamerica-northeast2-docker.pkg.dev/${{secrets.GCP_PROJECT_ID}}/portfolio-website/portfolio:${{ github.sha }}
 
     steps:
     - name: Checkout code

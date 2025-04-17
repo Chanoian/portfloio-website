@@ -30,7 +30,7 @@ jobs:
 
     - name: Build Container image
       run: |
-        docker build -t $IMAGE -f Containerfile
+        docker build -t $IMAGE .
 
     - name: Push Docker image
       run: |

@@ -28,9 +28,9 @@ jobs:
     - name: Configure Docker for GCR
       run: gcloud auth configure-docker
 
-    - name: Build Docker image
+    - name: Build Container image
       run: |
-        docker build -t $IMAGE .
+        docker build -t $IMAGE -f Containerfile
 
     - name: Push Docker image
       run: |

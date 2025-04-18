@@ -1,5 +1,5 @@
 # Use the official Node.js 18 image as the base image
-FROM node:18-alpine AS builder
+FROM node:18-alpine3.18 AS builder
 
 # Set working directory
 WORKDIR /app
@@ -15,7 +15,7 @@ COPY . .
 RUN npm run build || yarn build
 
 # --- Production image ---
-FROM node:18-alpine AS runner
+FROM node:18-alpine3.18 as runner
 WORKDIR /app
 
 ENV NODE_ENV=production

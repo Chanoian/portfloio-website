@@ -30,16 +30,14 @@ const About = () => {
               <SectionTitle title="About Me" />
               <div className="prose lg:prose-lg">
                 <p className="text-lg text-gray-700 dark:text-gray-300">
-                  Welcome! As a seasoned Engineer, I specialize in transforming complex
-                  technical challenges into elegant, scalable solutions. My expertise lies in orchestrating
-                  containerized applications and optimizing cloud infrastructure, with a particular passion for
-                  innovative projects like my cloud-native chess bot that brings the classic game to Google Home users.
+              Greetings! Welcome to my website. I'm Ara, technologist/engineer driven by a passion for turning complex technical challenges into clean, scalable solutions. 
+                I specialize in orchestrating containerized applications and fine-tuning cloud infrastructure
+                , always with an eye on innovation and pushing the limits of what's possible.
                 </p>
                 <p className="text-lg text-gray-700 dark:text-gray-300">
-                  I believe in the power of automation and the art of building scalable systems.
-                  My journey in tech has taken me from working with IoT devices to leading
-                  cloud transformations for major financial institutions, always staying at the
-                  forefront of emerging technologies.
+                I’m a firm believer in the power of automation and thoughtful system design. 
+                My journey in tech has taken me from hands-on work with IoT devices to leading
+                cloud transformation projects for major financial institutions — always staying ahead of the curve in emerging technologies.
                 </p>
               </div>
 

@@ -16,13 +16,9 @@ const About = () => {
               </div>
 
               <div className="absolute -top-4 -right-4 bg-gradient-to-r from-red-600 to-red-700 text-white px-6 py-3 rounded-full shadow-lg transform -rotate-6 hover:rotate-0 transition-transform duration-300">
-                <p className="text-sm font-medium flex items-center gap-2">
-                  <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
-                  </svg>
-                  10+ Years
+                <p className="text-sm font-medium text-center pointer-events-none select-none cursor-default">
+                  10+ Years<br />of Innovation
                 </p>
-                <p className="text-[10px] text-center">of Innovation</p>
               </div>
             </div>
 
